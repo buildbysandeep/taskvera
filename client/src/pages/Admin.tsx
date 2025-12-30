@@ -93,14 +93,26 @@ const Admin = () => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-end h-full w-full min-w-[300px] mx-auto">
-          <img src="/tasksync-bg.png" alt="TaskSync Logo" />
-          <div className="absolute bottom-5 text-black">
-            <Button className="rounded-lg  text-lg" variant={"ringHover"} onClick={handleCreateRoom} disabled={!socketID}>
-              Create Room
-            </Button>
-            {isLoading && !socketID && <div>connecting...</div>}
-            {!isLoading && !socketID && <div>Failed to connect!</div>}
+        <div className="flex flex-col items-center justify-end h-full w-full max-w-[700px] mx-auto">
+          <div className="relative w-full w-full">
+            <img
+              src="/taskvera_bg_r.png"
+              alt="TaskVera Background"
+              className="w-full h-full rounded-t-[22px] sm:rounded-t-[37px] md:rounded-t-[50px]"
+            />
+            <div className="text-black z-10 absolute top-[35px] md:top-[60px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
+              <Button
+                size="sm"
+                className="rounded-lg text-sm"
+                variant={"ringHover"}
+                onClick={handleCreateRoom}
+                disabled={!socketID}
+              >
+                Create Room
+              </Button>
+              {isLoading && !socketID && <div>connecting...</div>}
+              {!isLoading && !socketID && <div>Failed to connect!</div>}
+            </div>
           </div>
         </div>
       )}

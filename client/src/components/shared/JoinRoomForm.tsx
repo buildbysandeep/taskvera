@@ -30,8 +30,8 @@ const JoinRoomForm = ({
 
       <form className="flex flex-col w-full gap-2" onSubmit={handleJoinRoom}>
         <div className="mb-5">
-          <img src="/logo.png" alt="logo" className="w-[100px] h-[100px] mx-auto" />
-          <h1 className="text-2xl font-bold text-center">TaskSync</h1>
+          <img src="/logo_with_name.png" alt="logo" className="h-[30px] mx-2" />
+          <h1 className="text-2xl font-bold text-center sr-only">TaskVera</h1>
         </div>
         <div>
           <div className="mb-1 flex items-center justify-between gap-1 w-full">
@@ -58,9 +58,10 @@ const JoinRoomForm = ({
           <Input
             id="roomNo"
             placeholder="Room ID"
-            type="number"
+            type="text"
             value={roomId}
             onChange={(e) => setRoomId(e.target.value)}
+            disabled
           />
         </div>
         <div>

@@ -1,8 +1,8 @@
 ### `README.md`
 
-# TaskSync
+# TaskVera
 
-TaskSync is a real-time task management application designed to streamline collaboration between admins and users. Admins can create rooms, create tasks, and monitor user responses instantly, while users can join with a unique room ID to update task statuses as "Done" or "Issue." TaskSync ensures seamless and efficient task tracking for teams.
+TaskVera is a real-time task management application designed to streamline collaboration between admins and users. Admins can create rooms, create tasks, and monitor user responses instantly, while users can join with a unique room ID to update task statuses as "Done" or "Issue." TaskVera ensures seamless and efficient task tracking for teams.
 
 ---
 
@@ -25,7 +25,7 @@ TaskSync is a real-time task management application designed to streamline colla
 
 ---
 
-## Installation
+<!-- ## Installation
 
 ### Prerequisites
 
@@ -35,8 +35,8 @@ TaskSync is a real-time task management application designed to streamline colla
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/sandeepkumardev/TaskSync.git
-cd TaskSync
+git clone https://github.com/buildbysandeep/taskvera.git
+cd taskvera
 ```
 
 ### Install Dependencies
@@ -55,8 +55,9 @@ cd frontend
 pnpm install
 ```
 
----
+--- -->
 
+<!--
 ## Usage
 
 ### Start the Backend Server
@@ -93,7 +94,7 @@ Open the app in your browser at `http://localhost:5173`.
 
 ---
 
-## Roadmap
+## Roadmap -->
 
 ### Current Features:
 
@@ -109,7 +110,7 @@ Open the app in your browser at `http://localhost:5173`.
 
 ---
 
-## Contributing
+<!-- ## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -119,17 +120,8 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature-name`).
 5. Open a pull request.
 
----
+--- -->
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Contact
-
-For questions or support, please reach out to:
-
-- **Email**: sandeepypb@gmail.com
-- **GitHub**: [sandeepkumardev](https://github.com/sandeepkumardev)
+This project is proprietary. You may view the code for educational purposes only. You may NOT use, copy, modify, or distribute this code without permission.
