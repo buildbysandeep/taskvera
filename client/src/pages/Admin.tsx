@@ -100,7 +100,7 @@ const Admin = () => {
               alt="TaskVera Background"
               className="w-full h-full rounded-t-[22px] sm:rounded-t-[37px] md:rounded-t-[50px]"
             />
-            <div className="text-black z-10 absolute top-[35px] md:top-[60px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
+            <div className="text-black z-10 absolute top-[35px] md:top-[60px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
               <Button
                 size="sm"
                 className="rounded-lg text-sm"
