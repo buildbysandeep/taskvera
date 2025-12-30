@@ -8,7 +8,7 @@ import { joinRoom } from "./listeners/joinRoom";
 import { addTask } from "./listeners/addTask";
 import { clearSeat } from "./listeners/clearSeat";
 import { respondTask } from "./listeners/respondTask";
-import { adminRejoin } from "./listeners/adminRejoin";
+import { rejoin } from "./listeners/adminRejoin";
 import { destroyRoom } from "./listeners/destroyRoom";
 import { rooms } from "./db";
 import { exitRoom } from "./listeners/exitRoom";
@@ -35,8 +35,8 @@ io.on("connection", (socket) => {
   // Admin adds a task
   socket.on("addTask", (obj) => addTask(io, socket, obj));
 
-  // Admin rejoin a room
-  socket.on("adminRejoin", (obj) => adminRejoin(socket, obj));
+  // Rejoin a room
+  socket.on("rejoin", (obj) => rejoin(socket, obj));
 
   // User joins a room
   socket.on("joinRoom", (obj) => joinRoom(io, socket, obj));

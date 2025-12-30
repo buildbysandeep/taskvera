@@ -1,7 +1,7 @@
 import { Socket } from "socket.io";
 import { IAdmin, IUser, rooms } from "../db";
 
-export const adminRejoin = (socket: Socket, obj: any) => {
+export const rejoin = (socket: Socket, obj: any) => {
   try {
     const { roomID, userID, socketID } = obj;
     if (!roomID || !userID || !socketID) {

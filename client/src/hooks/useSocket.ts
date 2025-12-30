@@ -17,7 +17,7 @@ export const useSocket = (socket: Socket) => {
       const savedRoomID = localStorage.getItem("roomID");
       const savedUserID = localStorage.getItem("userID");
       if (savedRoomID && savedUserID) {
-        socket.emit("adminRejoin", { roomID: savedRoomID, userID: savedUserID, socketID: socket.id });
+        socket.emit("rejoin", { roomID: savedRoomID, userID: savedUserID, socketID: socket.id });
         console.log(`Rejoined room: ${savedRoomID}`);
       }
 
@@ -26,9 +26,11 @@ export const useSocket = (socket: Socket) => {
 
       socket.on("joinRoom", (data) => {
         if (!data || !data.ok) {
-          if (data.error) toast(data.error, { closeButton: true });
-          localStorage.removeItem("roomID");
-          localStorage.removeItem("userID");
+          if (data.error) {
+            toast(data.error, { closeButton: true });
+            localStorage.removeItem("roomID");
+            localStorage.removeItem("userID");
+          }
           return;
         }
 
