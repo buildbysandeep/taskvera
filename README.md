@@ -1,5 +1,3 @@
-### `README.md`
-
 # TaskVera
 
 TaskVera is a real-time task management application designed to streamline collaboration between admins and users. Admins can create rooms, create tasks, and monitor user responses instantly, while users can join with a unique room ID to update task statuses as "Done" or "Issue." TaskVera ensures seamless and efficient task tracking for teams.
